@@ -1,26 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
-import { Brain, LineChart, Target, Zap } from 'lucide-react';
+import { Brain, LineChart, Target, Zap, Trophy, Code2 } from 'lucide-react';
 
 const highlights = [
   {
     icon: Brain,
     title: 'Analytical Thinking',
-    description: 'Breaking down complex problems into actionable data-driven solutions',
+    description: 'Breaking down complex datasets into actionable insights and business solutions',
   },
   {
     icon: Target,
     title: 'Problem Solving',
-    description: 'Identifying patterns and anomalies that drive business decisions',
+    description: '250+ coding problems solved across platforms like LeetCode and GeeksforGeeks',
   },
   {
     icon: LineChart,
     title: 'Data Storytelling',
-    description: 'Transforming numbers into compelling narratives that resonate',
+    description: 'Transforming numbers into compelling visualizations using Tableau and Python',
   },
   {
     icon: Zap,
     title: 'Quick Learner',
-    description: 'Adapting rapidly to new tools, technologies, and methodologies',
+    description: 'Rapidly adapting to new tools like XGBoost, Scikit-learn, and RPA technologies',
   },
 ];
 
@@ -64,32 +64,34 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className={`space-y-6 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a <span className="text-foreground font-medium">Computer Science student</span> with a deep fascination for data analysis. 
+              I'm <span className="text-foreground font-medium">Jaswanth Kumar Reddi</span>, a B.Tech Computer Science graduate from 
+              Lovely Professional University with a deep fascination for data analysis. 
               My journey began with a simple question: <span className="text-primary italic">"What story does this data tell?"</span>
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Since then, I've developed a strong foundation in statistical analysis, data visualization, 
-              and machine learning fundamentals. I believe that every dataset has a narrative waiting to be discovered, 
-              and my role is to bring that narrative to light.
+              With hands-on experience in Python, SQL, and advanced Excel, I've developed expertise in 
+              data cleaning, visualization, and machine learning. I've worked on projects analyzing 40,000+ 
+              retail transactions and building ML models with 97% accuracy.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not exploring datasets, you'll find me keeping up with the latest in AI/ML research, 
-              contributing to open-source projects, or participating in data science competitions on Kaggle.
+              I'm passionate about transforming complex datasets into actionable business insights. 
+              My coursework in DSA, OOP, and DBMS complements my practical skills in Tableau, 
+              Pandas, NumPy, and Scikit-learn.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-6 border-t border-border">
               <div>
-                <p className="text-3xl font-bold gradient-text">10+</p>
+                <p className="text-3xl font-bold gradient-text">3+</p>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
               <div>
-                <p className="text-3xl font-bold gradient-text">5+</p>
-                <p className="text-sm text-muted-foreground">Certifications</p>
+                <p className="text-3xl font-bold gradient-text">250+</p>
+                <p className="text-sm text-muted-foreground">Problems Solved</p>
               </div>
               <div>
-                <p className="text-3xl font-bold gradient-text">2+</p>
-                <p className="text-sm text-muted-foreground">Internships</p>
+                <p className="text-3xl font-bold gradient-text">97%</p>
+                <p className="text-sm text-muted-foreground">ML Accuracy</p>
               </div>
             </div>
           </div>
@@ -111,6 +113,33 @@ const AboutSection = () => {
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Achievements Banner */}
+        <div className={`mt-16 glass-card p-6 rounded-xl transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center">
+            <div className="flex items-center gap-3">
+              <Trophy className="w-6 h-6 text-yellow-500" />
+              <div className="text-left">
+                <p className="text-foreground font-medium">3rd Place</p>
+                <p className="text-xs text-muted-foreground">Winter Notch'22 Coding Contest</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Code2 className="w-6 h-6 text-primary" />
+              <div className="text-left">
+                <p className="text-foreground font-medium">250+ Problems</p>
+                <p className="text-xs text-muted-foreground">LeetCode & GeeksforGeeks</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Trophy className="w-6 h-6 text-yellow-500" />
+              <div className="text-left">
+                <p className="text-foreground font-medium">Gold Medal</p>
+                <p className="text-xs text-muted-foreground">Maths Olympiad 2020</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

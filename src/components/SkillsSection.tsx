@@ -3,45 +3,45 @@ import { Database, FileSpreadsheet, BarChart2, Code2, Sparkles, TrendingUp } fro
 
 const skills = [
   {
-    name: 'SQL',
+    name: 'Python',
     level: 90,
-    icon: Database,
-    description: 'Complex queries, optimization, database design',
+    icon: Code2,
+    description: 'Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn',
     color: 'from-cyan-400 to-blue-500',
   },
   {
-    name: 'Python',
+    name: 'SQL',
     level: 85,
-    icon: Code2,
-    description: 'Pandas, NumPy, Matplotlib, Scikit-learn',
+    icon: Database,
+    description: 'Complex queries, joins, data manipulation',
     color: 'from-blue-400 to-purple-500',
   },
   {
-    name: 'Excel',
-    level: 88,
+    name: 'Advanced Excel',
+    level: 85,
     icon: FileSpreadsheet,
-    description: 'Advanced formulas, pivot tables, VBA macros',
+    description: 'Pivot tables, VLOOKUP, data analysis tools',
     color: 'from-green-400 to-cyan-500',
   },
   {
-    name: 'Power BI',
-    level: 82,
+    name: 'Tableau',
+    level: 80,
     icon: BarChart2,
-    description: 'Interactive dashboards, DAX, data modeling',
+    description: 'Interactive dashboards, data storytelling',
     color: 'from-yellow-400 to-orange-500',
   },
   {
     name: 'Data Visualization',
-    level: 87,
+    level: 85,
     icon: TrendingUp,
-    description: 'Storytelling through charts and infographics',
+    description: 'Matplotlib, Seaborn, creating insightful charts',
     color: 'from-purple-400 to-pink-500',
   },
   {
-    name: 'Statistics',
-    level: 80,
+    name: 'Machine Learning',
+    level: 75,
     icon: Sparkles,
-    description: 'Hypothesis testing, regression, probability',
+    description: 'XGBoost, Scikit-learn, classification models',
     color: 'from-pink-400 to-red-500',
   },
 ];
@@ -132,7 +132,7 @@ const SkillsSection = () => {
         <div className={`mt-12 text-center transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="text-muted-foreground mb-4">Also experienced with:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Git', 'Jupyter', 'Tableau', 'R', 'MongoDB', 'APIs', 'Machine Learning', 'A/B Testing'].map((tool) => (
+            {['Java', 'C', 'RPA', 'Git', 'Jupyter', 'XGBoost', 'EDA', 'Data Cleaning', 'Statistics'].map((tool) => (
               <span
                 key={tool}
                 className="px-4 py-2 glass-card rounded-full text-sm text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors cursor-default"

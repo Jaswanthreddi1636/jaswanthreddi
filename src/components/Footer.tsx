@@ -1,10 +1,10 @@
 import { Github, Linkedin, Mail, BarChart3 } from 'lucide-react';
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, href: 'https://github.com' },
-  { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
+  { name: 'GitHub', icon: Github, href: 'https://github.com/Jaswanthreddi1636' },
+  { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/jaswanthreddi' },
   { name: 'Kaggle', icon: BarChart3, href: 'https://kaggle.com' },
-  { name: 'Email', icon: Mail, href: 'mailto:alex.chen@email.com' },
+  { name: 'Email', icon: Mail, href: 'mailto:jaswanthreddy1636@gmail.com' },
 ];
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-primary" />
-            <span className="font-bold gradient-text">Alex Chen</span>
+            <span className="font-bold gradient-text">Jaswanth Kumar Reddi</span>
           </div>
 
           {/* Social Links */}
@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Alex Chen. All rights reserved.
+            © {new Date().getFullYear()} Jaswanth Kumar Reddi. All rights reserved.
           </p>
         </div>
 
