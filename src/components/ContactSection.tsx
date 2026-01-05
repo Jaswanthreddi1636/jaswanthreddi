@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Send, Mail, MapPin, Loader2 } from 'lucide-react';
+import { Send, Mail, MapPin, Loader2, Phone } from 'lucide-react';
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -55,33 +55,49 @@ const ContactSection = () => {
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-8">
           {/* Contact Info */}
-          <div className={`md:col-span-2 space-y-6 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <div className="glass-card p-6 rounded-xl">
-              <div className="flex items-center gap-4 mb-4">
+          <div className={`md:col-span-2 space-y-4 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+            <div className="glass-card p-5 rounded-xl">
+              <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground font-medium">alex.chen@email.com</p>
+                  <a href="mailto:jaswanthreddy1636@gmail.com" className="text-foreground font-medium hover:text-primary transition-colors">
+                    jaswanthreddy1636@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
 
-            <div className="glass-card p-6 rounded-xl">
+            <div className="glass-card p-5 rounded-xl">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <a href="tel:+917989324105" className="text-foreground font-medium hover:text-primary transition-colors">
+                    +91 7989324105
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-5 rounded-xl">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground font-medium">San Francisco, CA</p>
+                  <p className="text-foreground font-medium">Visakhapatnam, India</p>
                 </div>
               </div>
             </div>
 
-            <p className="text-muted-foreground text-sm">
-              I'm currently open to full-time positions, internships, and freelance data analysis projects.
+            <p className="text-muted-foreground text-sm pt-2">
+              I'm currently open to full-time Data Analyst positions and freelance data analysis projects.
             </p>
           </div>
 

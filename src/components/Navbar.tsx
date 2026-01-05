@@ -46,7 +46,7 @@ const Navbar = () => {
           className="flex items-center gap-2 text-foreground font-bold text-xl group"
         >
           <BarChart3 className="w-6 h-6 text-primary transition-transform group-hover:scale-110" />
-          <span className="gradient-text">DataViz</span>
+          <span className="gradient-text">JKR</span>
         </a>
 
         {/* Desktop Navigation */}
