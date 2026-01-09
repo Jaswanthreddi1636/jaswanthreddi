@@ -60,7 +60,7 @@ const projects = [
       'Generated actionable insights from structured database analysis',
     ],
     color: 'from-orange-500 to-red-600',
-    github: 'https://github.com/Jaswanthreddi1636/MY-SQL-And-Python-Data-Analytics-Mini-Project-Public',
+    github: 'https://github.com/Jaswanthreddi1636/MY-SQL-And-Python-Data-Analytics-Mini-Project-',
   },
 ];
 
