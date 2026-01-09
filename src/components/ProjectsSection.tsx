@@ -47,6 +47,21 @@ const projects = [
     color: 'from-green-500 to-teal-600',
     github: 'https://github.com/Jaswanthreddi1636',
   },
+  {
+    id: 4,
+    title: 'MySQL & Python Data Analytics Project',
+    period: 'Jan 2024 - Apr 2024',
+    problem: 'Built a comprehensive data analytics solution combining MySQL database operations with Python for data extraction, transformation, and analysis.',
+    tools: ['MySQL', 'Python', 'Pandas', 'SQL Queries', 'Data Analysis'],
+    insights: [
+      'Designed and implemented efficient SQL queries for data extraction',
+      'Integrated Python with MySQL for automated data processing',
+      'Performed complex data transformations and aggregations',
+      'Generated actionable insights from structured database analysis',
+    ],
+    color: 'from-orange-500 to-red-600',
+    github: 'https://github.com/Jaswanthreddi1636/MY-SQL-And-Python-Data-Analytics-Mini-Project-Public',
+  },
 ];
 
 const ProjectsSection = () => {
